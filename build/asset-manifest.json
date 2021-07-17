@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4ae6db7a.chunk.css",
+    "main.js": "/static/js/main.f6bf8caf.chunk.js",
+    "main.js.map": "/static/js/main.f6bf8caf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5c3eaa15.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5c3eaa15.js.map",
+    "static/css/2.316749da.chunk.css": "/static/css/2.316749da.chunk.css",
+    "static/js/2.b9b78e07.chunk.js": "/static/js/2.b9b78e07.chunk.js",
+    "static/js/2.b9b78e07.chunk.js.map": "/static/js/2.b9b78e07.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.dbc1ce85cb039421b5ea4dd97c85d107.js": "/precache-manifest.dbc1ce85cb039421b5ea4dd97c85d107.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.316749da.chunk.css.map": "/static/css/2.316749da.chunk.css.map",
+    "static/css/main.4ae6db7a.chunk.css.map": "/static/css/main.4ae6db7a.chunk.css.map",
+    "static/js/2.b9b78e07.chunk.js.LICENSE.txt": "/static/js/2.b9b78e07.chunk.js.LICENSE.txt",
+    "static/media/Dustin.jpg": "/static/media/Dustin.0dc6b6d6.jpg",
+    "static/media/b10 (2).png": "/static/media/b10 (2).137b4856.png",
+    "static/media/b11.png": "/static/media/b11.883f875d.png",
+    "static/media/back8 (2).png": "/static/media/back8 (2).b7bb439b.png",
+    "static/media/back9.png": "/static/media/back9.2a268be8.png",
+    "static/media/comics.pdf": "/static/media/comics.64250da8.pdf",
+    "static/media/corner3 (2).png": "/static/media/corner3 (2).840cd76f.png",
+    "static/media/corner4 (2).png": "/static/media/corner4 (2).66a23af3.png",
+    "static/media/new1 (2).jpg": "/static/media/new1 (2).9a1e9a35.jpg",
+    "static/media/new2 (2).jpg": "/static/media/new2 (2).dea55374.jpg",
+    "static/media/index.css": "/static/media/roboto-vietnamese-400-normal.a8be5b46.woff2",
+    "static/media/side14 (2).png": "/static/media/side14 (2).6e54463f.png",
+    "static/media/side15 (2).png": "/static/media/side15 (2).fa064821.png",
+    "static/media/sm5 (2).png": "/static/media/sm5 (2).d23a4f8b.png",
+    "static/media/sm6 (2).png": "/static/media/sm6 (2).e2cc6332.png",
+    "static/media/sw1 (2).png": "/static/media/sw1 (2).6c8bafec.png",
+    "static/media/sw2 (2).png": "/static/media/sw2 (2).e3b10805.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c3eaa15.js",
+    "static/css/2.316749da.chunk.css",
+    "static/js/2.b9b78e07.chunk.js",
+    "static/css/main.4ae6db7a.chunk.css",
+    "static/js/main.f6bf8caf.chunk.js"
+  ]
+}
