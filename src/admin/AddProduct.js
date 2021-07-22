@@ -96,6 +96,25 @@ const AddProduct = () => {
     });
   };
 
+  const [image, setImage ] = useState("");
+const [ url, setUrl ] = useState("");
+
+const uploadImage = () => {
+  const data = new FormData()
+  data.append("file", image)
+  data.append("upload_preset", "comics")
+data.append("cloud_name","qb1968")
+fetch(" 	https://api.cloudinary.com/v1_1/qb1968/image/upload",{
+method:"post",
+body: data
+})
+.then(resp => resp.json())
+.then(data => {
+setUrl(data.url)
+})
+.catch(err => console.log(err))
+}
+
   const newPostForm = () => (
     <form className="mb-3" onSubmit={clickSubmit}>
       <h4>Front Photo</h4>
@@ -110,18 +129,15 @@ const AddProduct = () => {
           />
         </label>
       </div>
-      {/* <h4>Rear Photo</h4>
+      <h4>Rear Photo</h4>
       <div className="form-group">
         <label className="btn btn-secondary">
-          <input
-            onChange={handleChange2("image")}
-            type="file"
-            
-            name="image"
-            accept="image/*"
-          />
+          
+          <input type="file" onChange= {(e)=> setImage(e.target.files[0])}></input>
+<button onClick={uploadImage}>Upload</button>
         </label>
-      </div> */}
+        <img src={url}/>
+      </div>
 
       <div className="form-group">
         <label className="text-muted">Name</label>
