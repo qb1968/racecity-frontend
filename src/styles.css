@@ -159,17 +159,16 @@ p{
   /* height: 115%; */
   
 }
-/* @media only screen and (max-width: 600px) {
-  .pic {
+@media only screen and (max-width: 600px) {
+  .pic1 {
 
-    margin-left: 0;
-    margin-right: 0;
+    
     width: 100%;
-    margin-top: auto;
-    height: 125%;
+    
+    height: auto;
 
   }
-} */
+}
 
 .Contact-form {
   text-align: center;
