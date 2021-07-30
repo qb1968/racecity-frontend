@@ -77,19 +77,7 @@ const Shop = () => {
 
   const classes = useStyles();
 
-  const loadMoreButton = () => {
-    return (
-      size > 0 &&
-      size >= limit && (
-        // <button onClick={loadMore} className='btn btn-warning mb-5'>
-        //   Load more
-        // </button>
-        <Button onClick={loadMore} variant='contained' className={classes.btn}>
-          Load more
-        </Button>
-      )
-    );
-  };
+ 
 
   useEffect(() => {
     init();
@@ -157,7 +145,7 @@ const Shop = () => {
             ))}
           </div>
           <hr />
-          {loadMoreButton()}
+          
         </div>
       </div>
       <Copyright />

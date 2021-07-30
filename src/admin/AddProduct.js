@@ -123,7 +123,7 @@ setUrl(data.url)
           <input
             onChange={handleChange("photo")}
             type="file"
-            
+            multiple
             name="photo"
             accept="image/*"
           />
@@ -136,7 +136,7 @@ setUrl(data.url)
           <input type="file" onChange= {(e)=> setImage(e.target.files[0])}></input>
 <button onClick={uploadImage}>Upload</button>
         </label>
-        <img src={url}/>
+        <img src={url} alt=""/>
       </div>
 
       <div className="form-group">

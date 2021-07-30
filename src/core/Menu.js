@@ -158,14 +158,14 @@ const MaterialAppBar = ({ history }) => {
           </Link>
         </MenuItem>
 
-        <MenuItem>
+        {/* <MenuItem>
           <Link style={isActive(history, '/shop')} to='/shop'>
             <IconButton aria-label='Shop' color='inherit'>
               <StorefrontIcon />
             </IconButton>
             Shop
           </Link>
-        </MenuItem>
+        </MenuItem> */}
 
         <MenuItem>
           <Link style={isActive(history, '/cart')} to='/cart'>
@@ -278,12 +278,12 @@ const MaterialAppBar = ({ history }) => {
               </IconButton>
             </Link>
 
-            <Link style={isActive(history, '/shop')} to='/shop'>
+            {/* <Link style={isActive(history, '/shop')} to='/shop'>
               <IconButton aria-label='Shop' color='inherit'>
                 <StorefrontIcon />
                 <Typography noWrap>Shop</Typography>
               </IconButton>
-            </Link>
+            </Link> */}
 
             <Link style={isActive(history, '/cart')} to='/cart'>
               <IconButton aria-label='Cart' color='inherit'>
