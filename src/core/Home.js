@@ -83,38 +83,38 @@ const Home = () => {
           <li className="main-li">
             <a
               className="main-a"
-              href="/shop"
+              href="/comics"
             >
               Comics
             </a>
           </li>
           <li className="main-li">
-            <a className="main-a" href="shop">
+            <a className="main-a" href="/toys">
               Toys
             </a>
           </li>
           <li className="main-li">
-            <a className="main-a" href="/shop">
+            <a className="main-a" href="/tcg">
               TCG
             </a>
           </li>
           <li className="main-li">
-            <a className="main-a" href="/shop">
+            <a className="main-a" href="/statues">
               Statues
             </a>
           </li>
           <li className="main-li">
-            <a className="main-a" href="/">
+            <a className="main-a" href="/sportscards">
               Sports Cards
             </a>
           </li>
           <li className="main-li">
-            <a className="main-a" href="/graphicnovels">
+            <a className="main-a" href="/pedalcars">
               Pedal Cars
             </a>
           </li>
           <li className="main-li">
-            <a className="main-a" href="/comicsupplies">
+            <a className="main-a" href="/vintagead">
               Vintage Advertising
             </a>
           </li>

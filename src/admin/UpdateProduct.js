@@ -123,7 +123,7 @@ const UpdateProduct = ({ match }) => {
             onChange={handleChange('photo')}
             type='file'
             name='photo'
-            
+            multiple="multiple"
             accept='image/*'
           />
         </label>

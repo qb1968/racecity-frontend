@@ -123,9 +123,10 @@ setUrl(data.url)
           <input
             onChange={handleChange("photo")}
             type="file"
-            multiple
+            multiple="multiple"
             name="photo"
             accept="image/*"
+            
           />
         </label>
       </div>
