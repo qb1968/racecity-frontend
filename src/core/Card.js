@@ -187,25 +187,38 @@ const Card = ({
     //   </div>
     // </div>
 
-    <Container className={classes.cardGrid} maxWidth='md'>
+    <Container className={classes.cardGrid} maxWidth="md">
       <CssBaseline />
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={12}>
           <CardM className={classes.card}>
             {shouldRedirect(redirect)}
-            <ShowImage item={product} url='product' />
-            {/* <ShowImage2 item={product} url='product' /> */}
+            <h4>Click images to enlarge</h4>
+
+            <ShowImage item={product} url="product" />
+            <ShowImage2
+              item={product}
+              url="product"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src =
+                  "../imagesdownload.png";
+              }}
+            />
+
             <CardContent className={classes.cardContent}>
-              <Typography gutterBottom variant='h5' component='h2'>
+              <Typography gutterBottom variant="h5" component="h2">
                 {product.name}
               </Typography>
-              <Typography className={classes.productDescription}>{product.description.substring(0, 100)}</Typography>
-              <p className='black-10'>Price: ${product.price}</p>
-              <p className='black-9'>
-                Category: {product.category && product.category.name}{' '}
-              </p>{' '}
-              <p className='black-8'>
-                Added on {moment(product.createdAt).fromNow()}{' '}
+              <Typography className={classes.productDescription}>
+                {product.description.substring(0, 100)}
+              </Typography>
+              <p className="black-10">Price: ${product.price}</p>
+              <p className="black-9">
+                Category: {product.category && product.category.name}{" "}
+              </p>{" "}
+              <p className="black-8">
+                Added on {moment(product.createdAt).fromNow()}{" "}
               </p>
               {showStock(product.quantity)}
               <br></br>
