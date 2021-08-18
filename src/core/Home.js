@@ -180,7 +180,7 @@ const Home = () => {
         <img className="pic" src={Pic14} />
       </div> */}
       <div className="button">
-        <h2>Interested download the form to get started</h2>
+        <h2 className="form-text">Interested download the form to get started</h2>
         <a href={Pdf} target="_blank" rel="noopener noreferrer">
           <Button variant="contained">Download Form</Button>
         </a>
