@@ -1,14 +1,24 @@
 import React from 'react';
 import { API } from '../config';
+import SingleSource from './SingleSource'
 
 const ShowImage = ({ item, url }) => (
-  <div className='product-img' style={{height: '250px'}}>
-    <img
+  <div className="product-img" style={{ height: "250px" }}>
+    <SingleSource
       src={`${API}/${url}/photo/${item._id}`}
       alt={item.name}
-      className='mb-3'
-      style={{ objectFit: 'contain', height: '100%', width: '100%', display: 'flex', marginLeft: 'auto', marginRight: 'auto' }}
+      className="mb-3"
+      style={{
+        objectFit: "contain",
+        height: "100%",
+        width: "100%",
+        display: "flex",
+        marginLeft: "auto",
+        marginRight: "auto",
+      }}
+      onerror="this.onerror=null;this.src='default-image.jpg';"
     />
+
     {/* <img
       src={`${API}/${url}/photo2/${item._id}`}
       

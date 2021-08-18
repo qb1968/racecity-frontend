@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'react-image-enlarger'
+import Pic from "../images/download.png";
 
 const SingleSource = ({ src }) => {
   const [zoomed, setZoomed] = React.useState(false);
@@ -13,6 +14,10 @@ const SingleSource = ({ src }) => {
         onClick={() => setZoomed(true)}
         onRequestClose={() => setZoomed(false)}
         text="hello"
+        onError={(event) => (event.target.style.display = "none")}
+        // onError={(e) => {
+        //   e.target.src = { Pic };
+        // }}
       />
     </div>
   );

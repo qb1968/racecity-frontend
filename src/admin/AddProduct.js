@@ -14,7 +14,7 @@ const AddProduct = () => {
     shipping: '',
     quantity: '',
     photo: '',
-    // image:'',
+    image:'',
     loading: false,
     error: '',
     createdProduct: '',
@@ -34,7 +34,7 @@ const AddProduct = () => {
     shipping,
     quantity,
     photo,
-    // image,
+    image,
     loading,
     error,
     createdProduct,
@@ -67,11 +67,11 @@ const AddProduct = () => {
     formData.set(name, value);
     setValues({ ...values, [name]: value });
   };
-  // const handleChange2 = (name) => (event) => {
-  //   const value = name === 'image' ? event.target.files[0] : event.target.value;
-  //   formData.set(name, value);
-  //   setValues({ ...values, [name]: value });
-  // };
+  const handleChange2 = (name) => (event) => {
+    const value = name === 'image' ? event.target.files[0] : event.target.value;
+    formData.set(name, value);
+    setValues({ ...values, [name]: value });
+  };
 
   const clickSubmit = (event) => {
     event.preventDefault();
@@ -86,7 +86,7 @@ const AddProduct = () => {
           name: '',
           description: '',
           photo: '',
-          // image: '',
+          image: '',
           price: '',
           quantity: '',
           loading: false,
@@ -96,24 +96,24 @@ const AddProduct = () => {
     });
   };
 
-  const [image, setImage ] = useState("");
-const [ url, setUrl ] = useState("");
+//   const [image, setImage ] = useState("");
+// const [ url, setUrl ] = useState("");
 
-const uploadImage = () => {
-  const data = new FormData()
-  data.append("file", image)
-  data.append("upload_preset", "comics")
-data.append("cloud_name","qb1968")
-fetch(" 	https://api.cloudinary.com/v1_1/qb1968/image/upload",{
-method:"post",
-body: data
-})
-.then(resp => resp.json())
-.then(data => {
-setUrl(data.url)
-})
-.catch(err => console.log(err))
-}
+// const uploadImage = () => {
+//   const data = new FormData()
+//   data.append("file", image)
+//   data.append("upload_preset", "comics")
+// data.append("cloud_name","qb1968")
+// fetch(" 	https://api.cloudinary.com/v1_1/qb1968/image/upload",{
+// method:"post",
+// body: data
+// })
+// .then(resp => resp.json())
+// .then(data => {
+// setUrl(data.url)
+// })
+// .catch(err => console.log(err))
+// }
 
   const newPostForm = () => (
     <form className="mb-3" onSubmit={clickSubmit}>
@@ -123,7 +123,7 @@ setUrl(data.url)
           <input
             onChange={handleChange("photo")}
             type="file"
-            multiple
+            multiple="multiple"
             name="photo"
             accept="image/*"
           />
@@ -132,12 +132,23 @@ setUrl(data.url)
       <h4>Rear Photo</h4>
       <div className="form-group">
         <label className="btn btn-secondary">
+          <input
+            onChange={handleChange2("image")}
+            type="file"
+            multiple="multiple"
+            name="image"
+            accept="image/*"
+          />
+        </label>
+      </div>
+      {/* <div className="form-group">
+        <label className="btn btn-secondary">
           
           <input type="file" onChange= {(e)=> setImage(e.target.files[0])}></input>
 <button onClick={uploadImage}>Upload</button>
         </label>
         <img src={url} alt=""/>
-      </div>
+      </div> */}
 
       <div className="form-group">
         <label className="text-muted">Name</label>

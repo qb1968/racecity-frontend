@@ -1,36 +1,36 @@
-import React from 'react';
-import { useState } from 'react';
+import React from "react";
+import { API } from "../config";
+import SingleSource from "./SingleSource";
+import ReactImageFallback from 'react-image-fallback';
 
 
-const ShowImage2 = () => {
-     
-const [image, setImage] = useState("");
-const [url, setUrl] = useState("");
-
-const uploadImage = () => {
-  const data = new FormData();
-  data.append("file", image);
-  data.append("upload_preset", "comics");
-  data.append("cloud_name", "qb1968");
-  fetch(" 	https://api.cloudinary.com/v1_1/qb1968/image/upload", {
-    method: "post",
-    body: data,
-  })
-    .then((resp) => resp.json())
-    .then((data) => {
-      setUrl(data.url);
-    })
-    .catch((err) => console.log(err));
-};
-
-
-   return (
-     <div className="product-img" style={{ height: "250px" }}>
-       <input type="file" onChange={(e) => setImage(e.target.files[0])}></input>
-       <button onClick={uploadImage}>Back Image</button>
-       <img src={url} alt="" />
-     </div>
-   );
-    }
-export default ShowImage2
+const ShowImage2 = ({ item, url }) => (
+  <div className="product-img" style={{ height: "250px" }}>
     
+      <SingleSource
+        src={`${API}/${url}/image/${item._id}`}
+        alt={item.name}
+      className="mb-3"
+     
+        style={{
+          objectFit: "contain",
+          height: "100%",
+          width: "100%",
+          display: "flex",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+        
+       
+      />
+   
+    {/* <img
+      src={`${API}/${url}/photo2/${item._id}`}
+      
+      className='mb-3'
+      style={{ objectFit: 'contain', height: '100%', width: '100%', display: 'flex', marginLeft: 'auto', marginRight: 'auto' }}
+    /> */}
+  </div>
+);
+
+export default ShowImage2;
