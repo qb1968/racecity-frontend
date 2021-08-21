@@ -121,7 +121,7 @@ const Home = () => {
         </ul>
       </div>
       <div>
-        <Search />
+        <Search/>
       </div>
       <div className="row">
         <div className="col-md-1"></div>

@@ -16,15 +16,11 @@ const ShowImage = ({ item, url }) => (
         marginLeft: "auto",
         marginRight: "auto",
       }}
-      onerror="this.onerror=null;this.src='default-image.jpg';"
-    />
-
-    {/* <img
-      src={`${API}/${url}/photo2/${item._id}`}
       
-      className='mb-3'
-      style={{ objectFit: 'contain', height: '100%', width: '100%', display: 'flex', marginLeft: 'auto', marginRight: 'auto' }}
-    /> */}
+    />
+    
+
+   
   </div>
 );
 

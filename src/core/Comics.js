@@ -351,7 +351,7 @@ const Shop = () => {
       </div>
       <Search />
       <div className="row">
-         <div className="col-md-3">
+         <div className="col-md-2">
          
 
           {/* <h4>Filter by price range</h4>

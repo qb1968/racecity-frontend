@@ -1,7 +1,7 @@
 import React from "react";
 import { API } from "../config";
 import SingleSource from "./SingleSource";
-import ReactImageFallback from 'react-image-fallback';
+
 
 
 const ShowImage2 = ({ item, url }) => (
@@ -24,12 +24,7 @@ const ShowImage2 = ({ item, url }) => (
        
       />
    
-    {/* <img
-      src={`${API}/${url}/photo2/${item._id}`}
-      
-      className='mb-3'
-      style={{ objectFit: 'contain', height: '100%', width: '100%', display: 'flex', marginLeft: 'auto', marginRight: 'auto' }}
-    /> */}
+   
   </div>
 );
 

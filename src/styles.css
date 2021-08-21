@@ -466,3 +466,14 @@ element.style{
     margin: auto;
   }
 }
+
+.photos {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  height:450px;
+}
+
+.title{
+  text-align: center;
+}

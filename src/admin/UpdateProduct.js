@@ -13,7 +13,7 @@ const UpdateProduct = ({ match }) => {
     category: '',
     shipping: '',
     quantity: '',
-    photo: '',
+   photo: '',
     image: '',
     loading: false,
     error: false,
@@ -100,7 +100,7 @@ const UpdateProduct = ({ match }) => {
             ...values,
             name: '',
             description: '',
-            photo: '',
+           photo: '',
             image: '',
             price: '',
             quantity: '',
@@ -123,7 +123,7 @@ const UpdateProduct = ({ match }) => {
             onChange={handleChange('photo')}
             type='file'
             name='photo'
-            multiple="multiple"
+            
             accept='image/*'
           />
         </label>

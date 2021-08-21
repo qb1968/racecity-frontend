@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   productDescription: {
-    height: '100px',
+    height: '55px',
   },
   footer: {
     backgroundColor: theme.palette.background.paper,
@@ -193,19 +193,16 @@ const Card = ({
         <Grid item xs={12} sm={12} md={12}>
           <CardM className={classes.card}>
             {shouldRedirect(redirect)}
+            <div className="photos">
             <h4>Click images to enlarge</h4>
-
+         
             <ShowImage item={product} url="product" />
-            <ShowImage2
+             <ShowImage2
               item={product}
               url="product"
-              onError={(e) => {
-                e.target.onerror = null;
-                e.target.src =
-                  "../imagesdownload.png";
-              }}
-            />
-
+              
+             />
+            </div>
             <CardContent className={classes.cardContent}>
               <Typography gutterBottom variant="h5" component="h2">
                 {product.name}

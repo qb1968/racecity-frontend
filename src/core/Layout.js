@@ -5,7 +5,6 @@ import Pic from '../images/NewDustin2.jpg'
 
 const Layout = ({
   title = "Title",
-  description = "Description",
   className,
   children,
 }) => (

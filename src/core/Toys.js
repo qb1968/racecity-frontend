@@ -153,13 +153,13 @@ const Toys = () => {
       <Search />
       <div className="row">
         <div className="col-md-3">
-          <h4>Filter by categories</h4>
+          {/* <h4>Filter by categories</h4>
           <ul>
             <Checkbox
               categories={categories}
               handleFilters={(filters) => handleFilters(filters, "category")}
             />
-          </ul>
+          </ul> */}
 
           {/* <h4>Filter by price range</h4>
           <div>

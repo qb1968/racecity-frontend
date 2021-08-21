@@ -123,19 +123,20 @@ const AddProduct = () => {
           <input
             onChange={handleChange("photo")}
             type="file"
-            multiple="multiple"
+            multiple
             name="photo"
             accept="image/*"
           />
         </label>
       </div>
+      
       <h4>Rear Photo</h4>
       <div className="form-group">
         <label className="btn btn-secondary">
           <input
             onChange={handleChange2("image")}
             type="file"
-            multiple="multiple"
+            multiple
             name="image"
             accept="image/*"
           />

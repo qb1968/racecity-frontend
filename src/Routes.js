@@ -30,15 +30,15 @@ const Routes = () => {
     <BrowserRouter>
       <Switch>
         <Route path="/" component={Home} exact />
-        <Route path="/sample" component={Sample} exact />
-        <Route path="/comics" component={Shop} exact />        
-        <Route path="/toys" component={Toys} exact />        
-        <Route path="/tcg" component={TCG} exact />        
-         <Route path="/statues" component={Statues} exact />         
-         <Route path="/sportscards" component={SportsCards} exact />         
-        <Route path="/pedalcars" component={PedalCars} exact />         
-         <Route path="/vintagead" component={VintageAd} exact />         
-                
+        
+        <Route path="/comics" component={Shop} exact />
+        <Route path="/toys" component={Toys} exact />
+        <Route path="/tcg" component={TCG} exact />
+        <Route path="/statues" component={Statues} exact />
+        <Route path="/sportscards" component={SportsCards} exact />
+        <Route path="/pedalcars" component={PedalCars} exact />
+        <Route path="/vintagead" component={VintageAd} exact />
+
         <Route path="/signin" component={Signin} exact />
         <Route path="/signup" component={Signup} exact />
         <PrivateRoute path="/user/dashboard" component={Dashboard} exact />

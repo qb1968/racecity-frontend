@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'react-image-enlarger'
-import Pic from "../images/download.png";
 
 const SingleSource = ({ src }) => {
   const [zoomed, setZoomed] = React.useState(false);
