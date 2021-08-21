@@ -116,7 +116,7 @@ const UpdateProduct = ({ match }) => {
 
   const newPostForm = () => (
     <form className='mb-3' onSubmit={clickSubmit}>
-      <h4>Post Photo</h4>
+      <h4>Front Photo</h4>
       <div className='form-group'>
         <label className='btn btn-secondary'>
           <input
@@ -128,7 +128,7 @@ const UpdateProduct = ({ match }) => {
           />
         </label>
       </div>
-      <h4>Post Photo</h4>
+      <h4>Rear Photo</h4>
       <div className='form-group'>
         <label className='btn btn-secondary'>
           <input
