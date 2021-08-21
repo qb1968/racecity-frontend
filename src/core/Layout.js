@@ -14,7 +14,7 @@ const Layout = ({
     <div className="jumbotron mt-1">
       
       
-      <img className="pic1" src={Pic}/>
+      <img className="pic1" src={Pic} alt=""/>
       
       
     </div>

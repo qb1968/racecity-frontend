@@ -3,8 +3,7 @@ import Layout from "./Layout";
 
 import Card from "./Card";
 import { getCategories, getFilteredProducts2 } from "./apiCore";
-import Checkbox from "./Checkbox";
-import RadioBox from "./RadioBox";
+
 import { makeStyles } from "@material-ui/core/styles";
 
 

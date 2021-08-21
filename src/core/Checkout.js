@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Button from '@material-ui/core/Button';
 import {
-  getProducts,
+ 
   getBraintreeClientToken,
   processPayment,
   createOrder,
 } from './apiCore';
 import { emptyCart } from './cartHelpers';
-import Card from './Card';
+
 import { isAuthenticated } from '../auth';
 import { Link } from 'react-router-dom';
 import DropIn from 'braintree-web-drop-in-react';
