@@ -55,6 +55,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+  productHeader: {
+    textAlign: 'center',
+    backgroundColor:'#3f51b5',
+  }
 }));
 
 const Card = ({
@@ -187,26 +191,32 @@ const Card = ({
     //   </div>
     // </div>
 
-    <Container className={classes.cardGrid} maxWidth="md">
+    <Container className={classes.cardGrid} maxWidth="lg">
       <CssBaseline />
-      <Grid container spacing={2}>
-        <Grid item xs={12} sm={12} md={12}>
+      <Grid container spacing={3}>
+        <Grid item xs={13} sm={13} md={13}>
           <CardM className={classes.card}>
+            <Typography className={classes.productHeader} gutterBottom variant="h6" component="h2">
+                {product.name}
+              </Typography>
             {shouldRedirect(redirect)}
+            <h4 className="image-enlarge">Click images to enlarge</h4>
             <div className="photos">
-            <h4>Click images to enlarge</h4>
-         
+           
+        
             <ShowImage item={product} url="product" />
+             
+              
+        
              <ShowImage2
               item={product}
               url="product"
               
              />
+             
             </div>
             <CardContent className={classes.cardContent}>
-              <Typography gutterBottom variant="h5" component="h2">
-                {product.name}
-              </Typography>
+              
               <Typography className={classes.productDescription}>
                 {product.description.substring(0, 100)}
               </Typography>

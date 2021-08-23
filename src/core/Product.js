@@ -80,7 +80,7 @@ const Product = (props) => {
       </div>
       <div className="row">
         <div className="col-md-2"></div>
-        <div className="col-md-4 col-sm-12">
+        <div className="col-md-4 col-sm-10">
           <h4>Product Details</h4>
           {product && product.description && (
             <Card product={product} showViewProductButton={false} />

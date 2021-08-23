@@ -77,9 +77,6 @@ p{
   * product image on card
   */
 
-.product-img {
-  min-height: 100px;
-}
 
 .jumbotron h2 {
   margin-top: -20px;
@@ -393,35 +390,22 @@ button.contact-email-text-btn:hover {
   }
 }
 
-#nav-main{
+
+.nav-main{
   display:flex;
-  justify-content:center;
-  width: 100%;
-  
+ 
+  justify-content:center; 
+  padding: 10px;
 }
 
-.group{
-  display:flex;
- margin-right:40px;
-  list-style-type: none;
-  width: 100%;
-  
-  
-}
+
 .main-li{
   display:flex;
+  margin:0 auto 0;
   border:2px solid #000;
   background-color:#3f51b5;
-  width:263px;
-  height:70px;
-  
- 
- 
-  
-  
-  
-  
- 
+ width: 238px;
+ height:80px;
 }
 .main-a{
   font-weight: bold;
@@ -435,14 +419,37 @@ button.contact-email-text-btn:hover {
   color:#000
 }
 
-@media only screen and (max-width: 600px) {
- .group {
-   display: flex;
-   flex-direction: column;
-   margin-left:20px;
-   list-style-type: none;
- }
+ @media only screen and (max-width: 600px) {
+.nav-main {
+  display: flex;
+
+  justify-content: center;
+  padding: 10px;
 }
+
+
+  .main-li {
+    display: flex;
+  
+    justify-content:center;
+    border: 2px solid #000;
+    background-color: #3f51b5;
+    margin: 0 auto 0;
+    width:115px;
+    margin-bottom:5px;
+  } 
+  .main-a {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin: auto;
+  }
+
+  .main-a:hover {
+    color: #000
+  }
+} */
 
 /* label.form-check-label{
   color:white;
@@ -469,11 +476,26 @@ element.style{
 
 .photos {
   display:flex;
-  flex-direction:column;
-  align-items:center;
-  height:450px;
+  flex-direction:row;
+  
+  
 }
 
 .title{
   text-align: center;
 }
+
+.product-img{
+  
+  width:100%;
+
+}
+
+
+
+.image-enlarge {
+  text-align: center;
+}
+
+
+

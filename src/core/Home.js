@@ -7,6 +7,7 @@ import 'fontsource-roboto';
 import Copyright from './Copyright';
 import Button from '@material-ui/core/Button';
 import Email_Form from './emailForm';
+import Navigation from './Nav';
 
 
 
@@ -78,55 +79,13 @@ const Home = () => {
 
   return (
     <Layout title="Home page" description="Main" className="container-fluid">
-      <div id="nav-main">
-        <ul className="group">
-          <li className="main-li">
-            <a
-              className="main-a"
-              href="/comics"
-            >
-              Comics
-            </a>
-          </li>
-          <li className="main-li">
-            <a className="main-a" href="/toys">
-              Toys
-            </a>
-          </li>
-          <li className="main-li">
-            <a className="main-a" href="/tcg">
-              TCG
-            </a>
-          </li>
-          <li className="main-li">
-            <a className="main-a" href="/statues">
-              Statues
-            </a>
-          </li>
-          <li className="main-li">
-            <a className="main-a" href="/sportscards">
-              Sports Cards
-            </a>
-          </li>
-          <li className="main-li">
-            <a className="main-a" href="/pedalcars">
-              Pedal Cars
-            </a>
-          </li>
-          <li className="main-li">
-            <a className="main-a" href="/vintagead">
-              Vintage Advertising
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div>
+      
+         <Navigation/>
         <Search/>
-      </div>
       <div className="row">
         <div className="col-md-1"></div>
         <div className="col-md-10">
-          <h2 className="mb-2">New Arrivals</h2>
+          <h2 className="mb-2">See What's New</h2>
           <div className="row">
             {productsByArrival.map((product, i) => (
               <div key={i} className="col-xl-4 col-lg-6 col-md-6 col-sm-12">

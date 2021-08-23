@@ -13,6 +13,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Search from "./Search";
 import { prices } from "./fixedPrices";
 import Copyright from "./Copyright";
+import Navigation from "./Nav";
 
 const VintageAd = () => {
   const [myFilters, setMyFilters] = useState({
@@ -113,45 +114,7 @@ const VintageAd = () => {
       description="Search and find collectibles"
       className="container-fluid"
     >
-      <div id="nav-main">
-        <ul className="group">
-          <li className="main-li">
-            <a className="main-a" href="/comics">
-              Comics
-            </a>
-          </li>
-          <li className="main-li">
-            <a className="main-a" href="/toys">
-              Toys
-            </a>
-          </li>
-          <li className="main-li">
-            <a className="main-a" href="/tcg">
-              TCG
-            </a>
-          </li>
-          <li className="main-li">
-            <a className="main-a" href="/statues">
-              Statues
-            </a>
-          </li>
-          <li className="main-li">
-            <a className="main-a" href="/sportscards">
-              Sports Cards
-            </a>
-          </li>
-          <li className="main-li">
-            <a className="main-a" href="/pedalcars">
-              Pedal Cars
-            </a>
-          </li>
-          <li className="main-li">
-            <a className="main-a" href="/vintage">
-              Vintage Advertising
-            </a>
-          </li>
-        </ul>
-      </div>
+     <Navigation/>
       <Search />
       <div className="row">
         <div className="col-md-3">
